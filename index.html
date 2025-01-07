@@ -7,10 +7,11 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="https://unpkg.com/scrollreveal"></script>
     <script defer src="./App.js"></script>
-    <title>Portfolio RRTracer</title>
+    <title>Portfolio RRTracer </title>
   </head>
   <body>
     <!-- ***************************************** -->
@@ -24,7 +25,7 @@
         <li><a href="#where">Where I am ?</a></li>
         <li><a href="#work">Work on ?</a></li>
         <li><a href="#contact">contact</a></li>
-        <!--<li><a href="#dark-mode" class="bx bx-moon"></a></li>-->
+        <!-- <li><a href="#dark-mode" class="bx bx-moon"></a></li>-->
       </ul>
       <div class="bx bx-menu" id="menu"></div>
     </nav>
@@ -62,11 +63,14 @@
           And I want to improve my skills alongside my studies
         </h2>
         <p>
-          I already know python (which allows me to easily make django backends for my projects), and bash. <br>
-          I have some knowledge of C++ but really very very little. <br> I am currently trying to learn JS and React later.
-          I also already know css and html, but working on my JS learning projects allows me to push my knowledge a little further.
-          <br><br>If you want to know more, contact me either by the form (longer) or by email or by using github.
-          <br><br>Thank you for reading!
+          I already know python (which allows me to easily make django backends
+          for my projects), and bash. <br />
+          I have some knowledge of C++ but really very very little. <br />
+          I am currently trying to learn JS and React later. I also already know
+          css and html, but working on my JS learning projects allows me to push
+          my knowledge a little further. <br /><br />If you want to know more,
+          contact me either by the form (longer) or by email or by using github.
+          <br /><br />Thank you for reading!
         </p>
         <a href="#" class="btn">Maybe more ...</a>
       </div>
@@ -135,30 +139,34 @@
           <img src="./images/portfolio.png" alt="" />
           <h3>Web Portfolio</h3>
           <p>
-            I am first working on a version of this portfolio with React.
-            For that I have to learn how to use it and make my portfolio in react.
-            Then I will do with: astrodotbuild, a hyper fast framework of implementation.
+            I am first working on a version of this portfolio with React. For
+            that I have to learn how to use it and make my portfolio in react.
+            Then I will do with: astrodotbuild, a hyper fast framework of
+            implementation.
           </p>
         </div>
         <div class="services-box">
           <img src="./images/ecom.png" alt="" />
           <h3>E-shops website</h3>
           <p>
-            Right now I'm working with a friend's developer  who is much more competent than me to develop an online store
-            for a client that i found. I'm using this project to learn the frontend (something I'm passionate about) in order to why not, realize
-            other projects for other clients. <br><br>colleague's github : https://github.com/pozender.
-            <br>
-            <br>
-            <br>
-            
+            Right now I'm working with a friend's developer who is much more
+            competent than me to develop an online store for a client that i
+            found. I'm using this project to learn the frontend (something I'm
+            passionate about) in order to why not, realize other projects for
+            other clients. <br /><br />colleague's github :
+            https://github.com/pozender.
+            <br />
+            <br />
+            <br />
           </p>
         </div>
         <div class="services-box">
           <img src="./images/bigdata.png" alt="" />
           <h3>Big secret Project :/</h3>
           <p>
-            I am also thinking about it with someone I know who wants to start an activity, so that I can perhaps create his own website.
-            <br>
+            I am also thinking about it with someone I know who wants to start
+            an activity, so that I can perhaps create his own website.
+            <br />
           </p>
         </div>
       </div>
@@ -175,12 +183,12 @@
       </div>
       <div class="contact-container">
         <form action="#">
-          <input type="text" placeholder="Name.." />
-          <input type="text" placeholder="Fisrt name..." />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message..."></textarea>
-          <button class="btn">Send </button>
+          <input id="name" type="text" placeholder="Name.." />
+          <input id="first_name" type="text" placeholder="Fisrt name..." />
+          <input id="email" type="email" placeholder="Email" />
+          <textarea id="message" placeholder="Message..."></textarea>
         </form>
+        <button id="btnForm" class="btn">Send</button>
       </div>
     </section>
     <!-- *****************************************  -->
