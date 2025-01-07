@@ -9,10 +9,6 @@ const first_name = document.querySelector("#first_name");
 const email = document.querySelector("#email");
 const message = document.querySelector("#message");
 const btnForm = document.querySelector("#btnForm");
-const emailValue = email.value;
-const msgValue = message.value;
-const nameValue = nameForm.value;
-const first_nameValue = first_name.value;
 
 btnMenu.addEventListener("click", (e) => {
   menu.classList.toggle("active");
@@ -48,6 +44,10 @@ const sendMail = (emailValue, nameValue, first_nameValue, msgValue) => {
 };
 
 btnForm.addEventListener("click", (e) => {
+  const emailValue = email.value;
+  const msgValue = message.value;
+  const nameValue = nameForm.value;
+  const first_nameValue = first_name.value;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (emailValue.trim() == 0) {
     alert("1 -Please fill all of the form before pushing send button .");
