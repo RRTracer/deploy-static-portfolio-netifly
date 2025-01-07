@@ -50,26 +50,27 @@ btnForm.addEventListener("click", (e) => {
   const first_nameValue = first_name.value;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (emailValue.trim() == 0) {
-    alert("1 -Please fill all of the form before pushing send button .");
+    alert("Email -Please fill all of the form before pushing send button .");
     return;
   }
   if (msgValue.trim() == 0) {
-    alert("2 - Please fill all of the form before pushing send button .");
+    alert("Message -Please fill all of the form before pushing send button .");
     return;
   }
   if (first_nameValue.trim() == 0) {
-    alert("3 -Please fill all of the form before pushing send button .");
+    alert(
+      "First name -Please fill all of the form before pushing send button ."
+    );
     return;
   }
   if (nameValue.trim() == 0) {
-    alert("4- Please fill all of the form before pushing send button .");
+    alert("Name -Please fill all of the form before pushing send button .");
     return;
   }
   if (!emailRegex.test(emailValue)) {
     alert("Please enter a real Email .");
     return;
   }
-  alert("0 erreur");
   sendMail(emailValue, nameValue, first_nameValue, msgValue);
 });
 
