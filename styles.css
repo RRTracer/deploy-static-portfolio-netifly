@@ -308,7 +308,14 @@ nav.active {
   height: 150px;
   resize: none;
 }
-.contact-container form button {
+.contact-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 17rem;
+  width: 100px;
+  height: 55px;
+  font-size: 1.75rem;
   cursor: pointer;
 }
 /* ****************************************  */
@@ -317,7 +324,7 @@ nav.active {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   justify-content: center;
   gap: 1.5rem;
   background: #080808;
@@ -400,19 +407,18 @@ footer {
 }
 
 @media screen and (max-width: 715px) {
-.home{
-  padding-top: 8rem;
-
-}
-nav {
-  padding: 10px 16px;
-}
-.home, .who{
-  text-align: center;
-  grid-template-columns: 1fr;
-
-}
-.who-img {
-  order: 2;
-}
+  .home {
+    padding-top: 8rem;
+  }
+  nav {
+    padding: 10px 16px;
+  }
+  .home,
+  .who {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .who-img {
+    order: 2;
+  }
 }
